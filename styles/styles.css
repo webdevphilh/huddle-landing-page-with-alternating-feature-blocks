@@ -55,7 +55,7 @@ body header {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 2.5em 1.8em;
+  padding: 5em 1.8em 2.5em 1.8em;
   background: #ebfbff url("../images/bg-hero-mobile.svg");
   background-size: contain;
 }
@@ -86,6 +86,7 @@ body header button {
 
 body header img {
   width: 100%;
+  max-width: 50rem;
 }
 
 body section {
@@ -110,6 +111,7 @@ body section img {
       -ms-grid-row-align: center;
       align-self: center;
   width: 70%;
+  max-width: 25rem;
 }
 
 body section > div {
@@ -138,6 +140,7 @@ body section > div p {
   line-height: 1.5em;
   color: #808d99;
   text-align: center;
+  max-width: 32rem;
 }
 
 body .CTA-box {
@@ -183,5 +186,162 @@ body footer {
   padding: 8em 1em 0 1em;
   background: #00252e;
   color: white;
+}
+
+body footer .adress p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem;
+}
+
+body footer .adress p.location::before {
+  position: relative;
+  width: 2em;
+  left: -1.5rem;
+  content: url(../images/icon-location.svg);
+}
+
+body footer .adress p.telefon::before {
+  position: relative;
+  width: 2em;
+  left: -1.5rem;
+  content: url(../images/icon-phone.svg);
+}
+
+body footer .adress p.email::before {
+  position: relative;
+  width: 2em;
+  left: -1.5rem;
+  content: url(../images/icon-email.svg);
+}
+
+body footer .adress img {
+  -webkit-filter: invert(50%);
+          filter: invert(50%);
+  width: 12rem;
+}
+
+body footer .impressum div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body footer .impressum div a {
+  margin-top: 1em;
+  margin-left: .5em;
+  color: white;
+  text-decoration: none;
+}
+
+body footer .sm-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3rem;
+}
+
+body footer .sm-links img {
+  margin: .3em;
+  width: 2rem;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+body footer .copyright {
+  margin-top: 0.5em;
+  text-align: center;
+  font-size: .6em;
+}
+
+@media screen and (min-width: 900px) {
+  body nav {
+    position: absolute;
+    width: 90%;
+    padding: 2rem 4rem;
+  }
+  body nav .logo img {
+    height: 2rem;
+  }
+  body nav button {
+    height: 4em;
+    width: 15em;
+  }
+  body header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: #ebfbff url("../images/bg-hero-desktop.svg");
+    background-size: cover;
+  }
+  body header h1, body header p {
+    margin: 2rem;
+    text-align: left;
+    max-width: 40em;
+  }
+  body header h1 {
+    font-size: 2.5em;
+  }
+  body header p {
+    font-size: 1em;
+  }
+  body header img {
+    padding: 2rem;
+  }
+  body section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 90rem;
+    margin-top: 2rem;
+  }
+  body section.row-reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  body section img {
+    padding: 2rem;
+  }
+  body section > div {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: auto;
+  }
+  body section > div h2, body section > div p {
+    text-align: left;
+  }
+  body section > div h2 {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+  body section > div p {
+    font-size: 1em;
+  }
+  body .CTA-box {
+    max-width: 50rem;
+    height: 12rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

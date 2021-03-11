@@ -48,7 +48,7 @@ body{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 2.5em 1.8em;
+        padding: 5em 1.8em 2.5em 1.8em;
         background: $veryPaleCyan url("../images/bg-hero-mobile.svg");
         background-size: contain;
 
@@ -76,6 +76,7 @@ body{
         }
         img{
             width: 100%;
+            max-width: 50rem;
         }
     }
     section{
@@ -92,6 +93,7 @@ body{
             margin-top: 3rem;
             align-self: center;
             width: 70%;
+            max-width: 25rem;
         }
         > div{
             display: flex;
@@ -109,6 +111,7 @@ body{
                 line-height: 1.5em;
                 color: $grayishBlue;
                 text-align: center;
+                max-width: 32rem;
             }
         }
 
@@ -149,5 +152,130 @@ body{
         padding: 8em 1em 0 1em;
         background: $veryDarkCyan;
         color: white;
+        .adress{
+            p{
+                display: flex;
+                margin: 2rem;
+                &.location::before{
+                    position: relative;
+                    width: 2em;
+                    left: -1.5rem;
+                    content: url(../images/icon-location.svg);
+                }
+                &.telefon::before{
+                    position: relative;
+                    width: 2em;
+                    left: -1.5rem;
+                    content: url(../images/icon-phone.svg);
+                }
+                &.email::before{
+                    position: relative;
+                    width: 2em;
+                    left: -1.5rem;
+                    content: url(../images/icon-email.svg);
+                }
+            }
+            img{
+                filter:invert(50%);
+                width: 12rem;
+
+            }
+        }
+        .impressum div{
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            a{
+                margin-top: 1em;
+                margin-left: .5em;
+                color: white;
+                text-decoration: none;
+            }
+        }
+        .sm-links{
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+            img {
+                margin: .3em;
+                width: 2rem;
+                filter:invert(100%);
+            }
+        }
+        .copyright{
+            margin-top: 0.5em;
+            text-align: center;
+            font-size: .6em;
+        }
+    }
+}
+
+@media screen and (min-width:900px){
+
+    body{
+        nav{
+            position: absolute;
+            width: 90%;
+            padding: 2rem 4rem;
+            & .logo img{
+                height: 2rem;
+            }
+            button{
+                height: 4em;
+                width: 15em;
+            }
+
+        }
+        header{
+            flex-direction: row;
+            background: $veryPaleCyan url("../images/bg-hero-desktop.svg");
+            background-size:cover;
+            h1, p{
+                margin: 2rem;
+                text-align: left;
+                max-width: 40em;
+            }
+            h1{
+                font-size: 2.5em;
+            }
+            p{
+                font-size: 1em;
+            }
+            img{
+                padding: 2rem;
+            }
+        }
+        section{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 90rem;
+            //margin: auto;
+            margin-top: 2rem;
+            &.row-reverse{
+                flex-direction: row-reverse;
+            }
+            img{
+                padding: 2rem;
+            }
+            > div{
+                align-items:flex-start;
+                margin: auto;
+                h2, p{
+                    text-align: left;
+                }
+                h2{
+                    font-size: 2em;
+                    margin-bottom: 0;
+                }
+                p{
+                    font-size: 1em;
+                }
+            }
+        }
+        .CTA-box{
+            max-width: 50rem;
+            height: 12rem;
+        }
     }
 }
