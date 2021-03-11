@@ -8,10 +8,84 @@
 body {
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
+  color: #00252e;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ebfbff;
+  padding: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body nav .logo img {
+  height: 1rem;
+}
+
+body nav button {
+  border: none;
+  background: white;
+  font-weight: 700;
+  height: 2.5em;
+  border-radius: 2.5em;
+  width: 9em;
+  -webkit-box-shadow: 0px 0px 10px 0px #dedede;
+  box-shadow: 0px 0px 10px 0px #dedede;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 2.5em 1.8em;
+  background: #ebfbff url("../images/bg-hero-mobile.svg");
+  background-size: contain;
+}
+
+body header h1 {
+  font-size: 1.5em;
+  margin-bottom: 0.7em;
+}
+
+body header p {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  margin-bottom: 2em;
+}
+
+body header button {
+  border: none;
+  background: #ff52bf;
+  font-weight: 700;
+  width: 18em;
+  height: 3em;
+  border-radius: 2.5em;
+  color: #ebfbff;
+  margin-bottom: 5em;
+  -webkit-box-shadow: 0px 0px 10px 0px #dedede;
+  box-shadow: 0px 0px 10px 0px #dedede;
 }
 
 body header img {
-  width: 90%;
+  width: 100%;
 }
 
 body section {
@@ -22,7 +96,9 @@ body section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid wheat;
+  border-radius: 1em;
+  -webkit-box-shadow: 0px 0px 10px 0px #e9e9e9;
+  box-shadow: 0px 0px 10px 0px #e9e9e9;
   width: 90%;
   margin: auto;
   margin-top: 2rem;
@@ -33,7 +109,7 @@ body section img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 90%;
+  width: 70%;
 }
 
 body section > div {
@@ -44,7 +120,7 @@ body section > div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 3rem 1rem;
+  padding: 3rem 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -54,13 +130,58 @@ body section > div h2 {
   font-family: 'Poppins', sans-serif;
   color: #00252e;
   margin: 1em 0;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 body section > div p {
-  font-size: 0.9em;
+  font-size: 0.8em;
   line-height: 1.5em;
   color: #808d99;
   text-align: center;
+}
+
+body .CTA-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 9em;
+  padding: 2em 0 0 0;
+  font-size: 0.9em;
+  margin: auto;
+  margin-top: 3em;
+  background: white;
+  border-radius: 1em;
+  -webkit-box-shadow: 0px -5px 5px 0px #ebebeb;
+  box-shadow: 0px -5px 5px 0px #ebebeb;
+  position: relative;
+  top: 4.5em;
+}
+
+body .CTA-box button {
+  border: none;
+  background: #ff52bf;
+  font-weight: 700;
+  width: 16em;
+  height: 3em;
+  border-radius: 2.5em;
+  color: #ebfbff;
+  margin: 3em 0;
+  -webkit-box-shadow: 0px 0px 10px 0px #adadad;
+  box-shadow: 0px 0px 10px 0px #adadad;
+}
+
+body footer {
+  padding: 8em 1em 0 1em;
+  background: #00252e;
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */

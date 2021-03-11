@@ -19,44 +19,135 @@ $grayishBlue: hsl(208, 11%, 55%);
 body{
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;   // 400 700
+    color: $veryDarkCyan;
+    align-items: center;
 
-    header{
-
-        img{
-            width: 90%;
+    nav{
+        display: flex;
+        background: $veryPaleCyan;
+        padding: 1.5rem;
+        align-items: center;
+        justify-content: space-between;
+        & .logo img{
+            height: 1rem;
+        }
+        button{
+            border: none;
+            background: white;
+            font-weight: 700;
+            height: 2.5em;
+            border-radius: 2.5em;
+            width: 9em;
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(222,222,222,1);
+            -moz-box-shadow: 0px 0px 10px 0px rgba(222,222,222,1);
+            box-shadow: 0px 0px 10px 0px rgba(222,222,222,1);
         }
     }
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2.5em 1.8em;
+        background: $veryPaleCyan url("../images/bg-hero-mobile.svg");
+        background-size: contain;
 
+        h1{
+            font-size: 1.5em;
+            margin-bottom: 0.7em;
+        }
+        p{
+            font-size: 0.9em;
+            line-height: 1.5em;
+            margin-bottom: 2em;
+        }
+        button{
+            border: none;
+            background: $custom-pink;
+            font-weight: 700;
+            width: 18em;
+            height: 3em;
+            border-radius: 2.5em;
+            color: $veryPaleCyan;
+            margin-bottom: 5em;
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(222,222,222,1);
+            -moz-box-shadow: 0px 0px 10px 0px rgba(222,222,222,1);
+            box-shadow: 0px 0px 10px 0px rgba(222,222,222,1);
+        }
+        img{
+            width: 100%;
+        }
+    }
     section{
         display: flex;
         flex-direction: column;
-        border: 1px solid wheat;
+        border-radius: 1em;
+        -webkit-box-shadow: 0px 0px 10px 0px rgb(233, 233, 233);
+        -moz-box-shadow: 0px 0px 10px 0px rgb(233, 233, 233);
+        box-shadow: 0px 0px 10px 0px rgb(233, 233, 233);
         width: 90%;
         margin: auto;
         margin-top: 2rem;
         img{
             margin-top: 3rem;
             align-self: center;
-            width: 90%;
+            width: 70%;
         }
         > div{
             display: flex;
             flex-direction: column;
-            padding: 3rem 1rem;
+            padding: 3rem 2rem;
             align-items: center;
             h2{
                 font-family: 'Poppins', sans-serif;
                 color: $veryDarkCyan;
                 margin: 1em 0;
-                font-size: 1.3em;
+                font-size: 1.2em;
             }
             p{
-                font-size: 0.9em;
+                font-size: 0.8em;
                 line-height: 1.5em;
                 color: $grayishBlue;
                 text-align: center;
             }
         }
 
+    }
+    .CTA-box{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 90%;
+        height: 9em;
+        padding: 2em 0 0 0;
+        font-size: 0.9em;
+        margin: auto;
+        margin-top: 3em;
+        background: white;
+        border-radius: 1em;
+        -webkit-box-shadow: 0px -5px 5px 0px rgba(235,235,235,1);
+        -moz-box-shadow: 0px -5px 5px 0px rgba(235,235,235,1);
+        box-shadow: 0px -5px 5px 0px rgba(235,235,235,1);
+        position: relative;
+        top: 4.5em;
+        button{
+            border: none;
+            background: $custom-pink;
+            font-weight: 700;
+            width: 16em;
+            height: 3em;
+            border-radius: 2.5em;
+            color: $veryPaleCyan;
+            margin: 3em 0;
+            -webkit-box-shadow: 0px 0px 10px 0px rgb(173, 173, 173);
+            -moz-box-shadow: 0px 0px 10px 0px rgb(173, 173, 173);
+            box-shadow: 0px 0px 10px 0px rgb(173, 173, 173);
+        }
+    }
+    footer{
+        padding: 8em 1em 0 1em;
+        background: $veryDarkCyan;
+        color: white;
     }
 }
