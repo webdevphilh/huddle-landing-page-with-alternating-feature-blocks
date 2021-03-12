@@ -32,7 +32,7 @@ body nav .logo img {
   height: 1rem;
 }
 
-body nav button {
+body nav .navbutt {
   border: none;
   background: white;
   font-weight: 700;
@@ -252,11 +252,20 @@ body footer .sm-links {
   margin-top: 3rem;
 }
 
-body footer .sm-links img {
-  margin: .3em;
-  width: 2rem;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
+body footer .sm-links a {
+  margin: .3em 1.3em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body footer .sm-links a svg {
+  width: 1.5rem;
+  height: 1.5em;
+  padding: .8em;
+  fill: white;
+  border: solid 1px white;
+  border-radius: 50%;
 }
 
 body footer .copyright {
@@ -274,7 +283,7 @@ body footer .copyright {
   body nav .logo img {
     height: 2rem;
   }
-  body nav button {
+  body nav .navbutt {
     height: 4em;
     width: 15em;
   }
@@ -341,7 +350,77 @@ body footer .copyright {
   }
   body .CTA-box {
     max-width: 50rem;
-    height: 12rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .CTA-box h3 {
+    font-size: 2rem;
+  }
+  body .CTA-box button {
+    width: 18em;
+    height: 3.5em;
+    border-radius: 3rem;
+    font-size: 1.5em;
+    margin: 2em 0;
+  }
+  body footer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1rem;
+    font-size: 0.9em;
+  }
+  body footer div.adress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 30%;
+    margin: 1rem 5rem;
+  }
+  body footer div.adress p {
+    margin: 1rem;
+    width: 100%;
+  }
+  body footer div.impressum {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 30%;
+    margin: 3rem 1rem;
+  }
+  body footer div.impressum div {
+    margin-right: 6rem;
+  }
+  body footer div.sm-links {
+    width: 30%;
+    margin: 5rem 1rem;
+  }
+  body footer .copyright {
+    padding: 2rem;
+  }
+  body button:hover {
+    cursor: pointer;
+  }
+  body .navbutt:hover {
+    color: #808d99;
+  }
+  body .headbutt:hover {
+    background: rgba(255, 82, 191, 0.7);
+  }
+  body .cta-butt:hover {
+    background: rgba(255, 82, 191, 0.7);
+  }
+  body footer .impressum a:hover {
+    text-decoration: underline;
+  }
+  body footer .sm-links a:hover > svg {
+    fill: #ff52bf;
+    border: #ff52bf 1px solid;
   }
 }
 /*# sourceMappingURL=styles.css.map */

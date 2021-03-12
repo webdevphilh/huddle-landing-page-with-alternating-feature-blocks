@@ -3,25 +3,18 @@ $veryPaleCyan: hsl(193, 100%, 96%);
 $veryDarkCyan: hsl(192, 100%, 9%);
 $grayishBlue: hsl(208, 11%, 55%);
 
-// heading ->       font-family: 'Poppins', sans-serif;
-// weight -> 600
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: inherit;
 }
 
-*{
-    //border: 1px solid greenyellow;
-}
-
+//styling
 body{
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;   // 400 700
     color: $veryDarkCyan;
     align-items: center;
-
     nav{
         display: flex;
         background: $veryPaleCyan;
@@ -31,7 +24,7 @@ body{
         & .logo img{
             height: 1rem;
         }
-        button{
+        & .navbutt{
             border: none;
             background: white;
             font-weight: 700;
@@ -196,10 +189,17 @@ body{
             display: flex;
             justify-content: center;
             margin-top: 3rem;
-            img {
-                margin: .3em;
-                width: 2rem;
-                filter:invert(100%);
+            a{
+                margin: .3em 1.3em;
+                height: fit-content;
+                svg{
+                    width: 1.5rem;
+                    height: 1.5em;
+                    padding: .8em;
+                    fill: white;
+                    border: solid 1px white;
+                    border-radius: 50%;
+                }
             }
         }
         .copyright{
@@ -210,8 +210,8 @@ body{
     }
 }
 
+// responsive and hover
 @media screen and (min-width:900px){
-
     body{
         nav{
             position: absolute;
@@ -220,7 +220,7 @@ body{
             & .logo img{
                 height: 2rem;
             }
-            button{
+            & .navbutt{
                 height: 4em;
                 width: 15em;
             }
@@ -275,7 +275,74 @@ body{
         }
         .CTA-box{
             max-width: 50rem;
-            height: 12rem;
+            height: fit-content;
+            h3{
+                font-size: 2rem;
+            }
+            button{
+                width: 18em;
+                height: 3.5em;
+                border-radius: 3rem;
+                font-size: 1.5em;
+                margin: 2em 0;
+            }
+        }
+        footer{
+            div{
+                display: flex;
+                margin: 1rem;
+                font-size: 0.9em;
+                &.adress{
+                    display: flex;
+                    flex-direction: column;
+                    width: 30%;
+                    margin: 1rem 5rem;
+                    p{
+                        margin: 1rem;
+                        width: 100%;
+                    }
+                }
+                &.impressum{
+                    display: flex;
+                    width: 30%;
+                    margin: 3rem 1rem;
+                    div{
+                        margin-right: 6rem;
+                    }
+                }
+                &.sm-links{
+                    width: 30%;
+                    margin: 5rem 1rem;
+                }
+            }
+            .copyright{
+                padding: 2rem;
+            }
+        }
+
+
+        button:hover{
+            cursor: pointer;
+        }
+        .navbutt:hover{
+            color: $grayishBlue;
+        }
+        .headbutt:hover{
+            background: hsla(322, 100%, 66%, 0.7);
+        }
+        .cta-butt:hover{
+            background: hsla(322, 100%, 66%, 0.7);
+        }
+        footer{
+            .impressum{
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+            .sm-links a:hover > svg{
+                fill: $custom-pink;
+                border: $custom-pink 1px solid;
+            }
         }
     }
 }
